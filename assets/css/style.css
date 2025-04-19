@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*=========================
+common
+=========================*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 
+        "dnp-shuei-gothic-kin-std", 
+        sans-serif;
+    font-style: normal;
+    color: #000;
+    background-color: #fff;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section__topic {
+    color: #000;
+    /* kh2_title_en */
+    font-family: "Hind Guntur";
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 1.6px;
+}
+
+/*=========================
+header
+=========================*/
+.header {
+    padding: ;
+}
