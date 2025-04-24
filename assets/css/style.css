@@ -139,6 +139,12 @@ header
     align-items: center;
 }
 
+.nav__header__img {
+    position: fixed;
+    top: 43px; /* 上からの距離を調整 */
+    left: 30px; /* 左からの距離を調整 */
+}
+
 .nav__list {
     display: flex;
     justify-content: space-between;
@@ -177,7 +183,7 @@ header
     cursor: pointer;
 
     position: absolute;
-    top: 12px;
+    top: 30px;
     right: 3.5%;
 }
 
