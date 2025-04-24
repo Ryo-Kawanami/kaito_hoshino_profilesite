@@ -23,12 +23,13 @@
 </head>
 <body>
     <div id="container" class="container">
-        <header class="header"></header>
-            <h1 class="header__topic"><a href="#"><img class="nav__logo" src="assets/images/logo_header.svg" alt=""></a></h1>
-
+        <header class="header">
+            <p class="header__img"><img src="assets/images/logo_header.svg" alt=""></p>
+            <!-- <h1 class="header__topic"><a href="#"></a>KAITO<br>HOSHINO</h1> -->
             <nav class="nav">
                 <div class="nav__header">
-                    <img class="nav__logo" src="assets/images/logo_header.svg" alt="">
+                    <p class="nav__header__img"><img src="assets/images/logo_header.svg" alt=""></p>
+                    <!-- <h1 class="nav__topic"><a href="#"></a>KAITO<br>HOSHINO</h1> -->
                     <img class="nav__btn" src="assets/images/btn_close.svg" alt="">
                 </div>
                 <ul class="nav__list">
@@ -36,40 +37,46 @@
                     <li class="nav__item"><a href="#hairStyles">HAIR STYLES</a></li>
                     <li class="nav__item"><a href="#menu">MENU</a></li>
                     <li class="nav__item"><a href="#about">ABOUT</a></li>
-                    <li class="nav__item"><a href="#">RESERVE</a></li>
-                    <li class="nav__item"><a href="#"><img src="assets/images/icon_instagram_black.svg" alt=""></a></li>
+                    <li class="nav__item nav__item--instagram"><a href="#"><img src="assets/images/icon_instagram_black.svg" alt=""></a></li>
+                    <li class="nav__item nav__item--reserve">
+                        <a class="reserve_btn" href="#">Reserve <br><span class="reserve_btn_txt">こちらからご予約ください</span></a>
+                    </li>
                 </ul>
             </nav>
             <img class="header__btn" src="assets/images/btn_menu.svg" alt="">
+        </header>
         <main class="main">
             <article class="article">
                 <header class="article__header">
                     <p class="mainImg">
-                        <img src="assets/images/main-sp.jpg" alt="KAITO HOSHINOのメインビジュアル">
-                        <img src="assets/images/main-pc.jpg" alt="KAITO HOSHINOのメインビジュアル">
+                        <!-- <img class="mainImg__sp" src="assets/images/main-sp.jpg" alt="KAITO HOSHINOのメインビジュアル"> -->
+                        <img class="mainImg__sp" src="assets/images/hero.jpg" alt="KAITO HOSHINOのメインビジュアル">
+                        <img class="mainImg__pc" src="assets/images/main-pc.jpg" alt="KAITO HOSHINOのメインビジュアル">
                     </p>
                 </header>
                 <section id="message" class="section section--message">
-                    <h2 class="section__topic">MESSAGE  メッセージ</h2>
+                    <h2 class="section__topic section__topic--message">MESSAGE  <span class="furigana">メッセージ</span></h2>
                     <div class="message">
-                        <p class="message__img"><img src="assets/images/message.jpg" alt=""></p>
+                        <!-- <p class="message__img"><img src="assets/images/message.jpg" alt=""></p> -->
+                        <p class="message__img"><img src="assets/images/message_new.jpg" alt=""></p>
                         <p class="message__txt">
                             「美容室って少し緊張する」<br>
                             ——そんなあなたへ。 <br> 
                             <br>
                             ここでは、無理な提案や押し売りは一切なし。<br>
                             「どうしてその髪型にしたいのか」をはじめ、<br>
-                            癖毛の悩みからカラーの色味を選ばれた理由まで深く丁寧にカウンセリングします。<br>
+                            癖毛の悩みからカラーの色味を選ばれた理由まで深く丁寧に<br>
+                            カウンセリングします。<br>
                             ときには「今はやらない方がいいかもしれませんね」<br>
                             とアドバイスすることも。<br>
                             髪質やダメージレベル、今後のご予定などを踏まえ、お客様にとって本当に必要な施術だけを提案します。</p>
                     </div>
                 </section>
                 <section id="hairStyles" class="section section--hairStyles">
-                    <h2 class="section__topic">HAIR STYLES  ヘアスタイル</h2>
+                    <h2 class="section__topic section__topic--hairStyles">HAIR STYLES  <span class="furigana">ヘアスタイル</span></h2>
                     <ul class="hairStyles">
                         <li class="hairStyles__item">
-                            <p class="hairStyles__img"><img src="assets/images/thum-hairStyle01.PNG" alt="ヘアスタイル1"></p>
+                            <p class="hairStyles__img"><img src="assets/images/thum-hairStyle01.jpg" alt="ヘアスタイル1"></p>
                             <div class="hairStyles__content">
                                 <h4 class="hairStyles__name">韓国風 – シースルーマッシュウルフ</h4>
                                 <p class="hairStyles__identity">メンズ</p>
@@ -77,7 +84,7 @@
                             </div><!-- hairStyles__content -->
                         </li>
                         <li class="hairStyles__item">
-                            <p class="hairStyles__img"><img src="assets/images/thum-hairStyle02.PNG" alt="ヘアスタイル2"></p>
+                            <p class="hairStyles__img"><img src="assets/images/thum-hairStyle02.jpg" alt="ヘアスタイル2"></p>
                             <div class="hairStyles__content">
                                 <h4 class="hairStyles__name">韓国風 – センターパート/縮毛矯正</h4>
                                 <p class="hairStyles__identity">メンズ</p>
@@ -101,7 +108,7 @@
                             </div><!-- hairStyles__content -->
                         </li>
                         <li class="hairStyles__item">
-                            <p class="hairStyles__img"><img src="assets/images/thum-hairStyle05.JPG" alt="ヘアスタイル5"></p>
+                            <p class="hairStyles__img"><img src="assets/images/thum-hairStyle05.jpg" alt="ヘアスタイル5"></p>
                             <div class="hairStyles__content">
                                 <h4 class="hairStyles__name">レイヤーカット/艶髪縮毛矯正</h4>
                                 <p class="hairStyles__identity">レディース</p>
@@ -109,69 +116,88 @@
                             </div><!-- hairStyles__content -->
                         </li>
                         <li class="hairStyles__item">
-                            <p class="hairStyles__img"><img src="assets/images/thum-hairStyle06.JPG" alt="ヘアスタイル6"></p>
+                            <p class="hairStyles__img"><img src="assets/images/thum-hairStyle06.jpg" alt="ヘアスタイル6"></p>
                             <div class="hairStyles__content">
                                 <h4 class="hairStyles__name">レイヤーカット</h4>
                                 <p class="hairStyles__identity">レディース</p>
                                 <p class="hairStyles__category">#カット #カラー</p>
                             </div><!-- hairStyles__content -->
-                        </li>
+                        </li>                        
                     </ul>
-                    <a class="btn" href="#">more hairstyles</a>
+                    <div class="btn_container btn_container--hairStyles">
+                        <a class="btn btn--hairstyles" href="#">more hairstyles</a>
+                        <img class="btn_arrlow btn_arrlow--hairStyles" src="assets/images/arrow_btn_gray.svg" alt="">
+                    </div>
                 </section>
                 <section id="menu" class="section section--menu">
-                    <h2 class="section__topic">MENU  メニュー</h2>
+                    <h2 class="section__topic section__topic--menu">MENU<span class="furigana">メニュー</span></h2>
                     <div class="menu">
-                        <p class="menu__img"><img src="assets/images/menu01.jpg" alt=""></p>
-                        <p class="menu__img"><img src="assets/images/menu02.jpg" alt=""></p>
+                        <!-- <p class="menu__img menu__img--1"><img src="assets/images/menu01.jpg" alt=""></p> -->
+                        <!-- <p class="menu__img menu__img--2"><img src="assets/images/menu02.jpg" alt=""></p> -->
+                        <p class="menu__img menu__img--set"><img src="assets/images/menu_imgs.svg" alt=""></p>
+                        
                         <p class="menu__txt">
                             お客様の髪の悩みや理想のスタイルを丁寧にお伺いし、<br>
                             髪質やクセに合わせた<br>
                             最適なメニューをご提案いたします。<br>
                             ナチュラルな仕上がりの縮毛矯正や韓国風カットも、お任せください。<br>
-                            自宅でのスタイリングも簡単で、毎日を少し特別に感じられるようなヘアスタイルをご提供いたします。</p>
-                        <a class="btn" href="#">more menu</a>
+                            自宅でのスタイリングも簡単で、<br>
+                            毎日を少し特別に感じられるようなヘアスタイルをご提供いたします。</p>
+                    </div>
+                    <div class="btn_container btn_container--menu">
+                        <a class="btn btn--menu" href="#">more menu</a>
+                        <img class="btn_arrlow btn_arrlow--menu" src="assets/images/arrow_btn_white.svg" alt="">
                     </div>
                 </section>
                 <section id="about" class="section section--about">
-                    <h2 class="section__topic">ABOUT  私について</h2>
-                    <div>
-                        <p><img src="assets/images/about.jpg" alt=""></p>
-                        <div>
-                            <p>星野 海斗</p>
-                            <p>Hoshino Kaito スタイリスト</p>
+                    <h2 class="section__topic section__topic--about">ABOUT  <span class="furigana">私について</span></h2>
+                    <div class="about">
+                        <!-- <p class="about__img about__img--about"><img src="assets/images/about.jpg" alt=""></p> -->
+                        <p class="about__img about__img--about"><img src="assets/images/about_edit.jpg" alt=""></p>
+                        <div class="about__middle_container">
+                            <div class="stylist">
+                                <p class="stylist__name">星野 海斗</p>
+                                <p class="stylist__engNameJob">Hoshino Kaito <br class="spBr"><span class="stylist__job">スタイリスト</span></p>
+                            </div>
+                            <!-- <p class="about__img about__img--scissors_comb"><img src="assets/images/scissors_comb.jpg" alt=""></p> -->
+                            <p class="about__img about__img--scissors_comb"><img src="assets/images/scissors_comb_edit.jpg" alt=""></p>
                         </div>
-                        <p>夢である「お客様と歳をとる」を<br>
-                            実現するために<br>
-                            <br>
-                            一人ひとりの悩みに耳を傾け、<br>
-                            その時の気持ちやライフスタイルに寄り添いながら、<br>
-                            “あなたにいちばん似合う”<br>
-                            を一緒に見つけていきたいんです。<br>
-                            <br>
-                            そのために、技術のアップデートは欠かさず、<br>
-                            流行だけにとらわれ過ぎない、<br>
-                            あなたにとってベストな提案ができるよう日々学びを重ねています。<br>
-                            <br>
-                            美容師という仕事を心から楽しめるのは、<br>
-                            あなたの「こうなりたい」があるから。<br>
-                            ずっと一緒に歳を重ねていけるように、<br>
-                            これからも、あなたのそばで。</p>
-                        <a class="btn" href="#">read more</a>
+                        <p class="about__txt">
+                            <span class="about__txt__top">
+                                夢である「お客様と歳をとる」を<br>
+                                実現するために<br>
+
+                            </span>
+                            <span class="about__txt__bottom">
+                                一人ひとりの悩みに耳を傾け、<br>
+                                その時の気持ちやライフスタイルに寄り添いながら、<br>
+                                “あなたにいちばん似合う”<br>
+                                を一緒に見つけていきたいんです。<br>
+                                <br>
+                                そのために、技術のアップデートは欠かさず、<br>
+                                流行だけにとらわれ過ぎない、<br>
+                                あなたにとってベストな提案ができるよう日々学びを重ねています。<br>
+                                <br>
+                                美容師という仕事を心から楽しめるのは、<br>
+                                あなたの「こうなりたい」があるから。<br>
+                                ずっと一緒に歳を重ねていけるように、<br>
+                                これからも、あなたのそばで。</p>
+                            </span> 
+                    </div>
+                    <div class="btn_container btn_container--about">
+                        <a class="btn btn--readmore" href="#">read more</a>
+                        <img class="btn_arrlow btn_arrlow--about" src="assets/images/arrow_btn_gray.svg" alt="">
                     </div>
                 </section>
                 <footer class="article__footer">
-                    <p class="reserveBtn">
-                        <a href="#">Reserve <br> こちらからご予約ください</a>
-                    </p>
-                </header>
+                    <a class="reserve_btn" href="#">Reserve <br><span class="reserve_btn_txt">こちらからご予約ください</span></a>
+                </footer>
             </article>
         </main>
         <footer class="footer">
-            <div class="footer__logo"><img class="nav__logo" src="assets/images/logo_footer.svg" alt=""></div>
+            <p class="footer__logo"><img src="assets/images/logo_footer.svg" alt=""></p>
             <div class="footer__main">
-                <p>KAITO HOSHINO</p>
-                <dl>
+                <dl class="footer__dl">
                     <dt>Open</dt>
                     <dd>
                         月火 / 土日
@@ -213,5 +239,7 @@
             <small class="footer__small">&copy; KAITO HOSHINO</small>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

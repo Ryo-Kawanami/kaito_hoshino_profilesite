@@ -29,15 +29,413 @@ img {
 .section__topic {
     color: #000;
     font-family: "Hind Guntur";
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: normal;
     letter-spacing: 1.6px;
+    text-align: center;
+
+    padding-bottom: 32px;
+}
+
+.furigana {
+    font-family: "dnp-shuei-gothic-kin-std";
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* 縦方向中央揃え */
+    gap: 8px;
+}
+
+.btn {
+    display: block;
+    color: #515151;
+    font-family: Hind Guntur;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.48px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.btn_arrlow {
+    /* flexアイテム内の画像の垂直位置ずれを防ぐため */
+    display: block; 
+    margin-bottom: 6px;
+}
+
+.reserve_btn {
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 12px 0; /* 上下のpaddingと左右のpadding */
+    text-align: center;
+    width: 240px;
+    margin: 0 auto;
+
+    cursor: pointer; /* カーソルをポインターに変更 */
+
+    font-family: Hind Guntur;
+    font-size: 2.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+}
+
+.reserve_btn_txt {
+    display: block;
+    font-family: Dnp-shuei-gothic-kin-std;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-top: 5px;
+    /* line-height: 0.8; */
+}
+
+.container {
+    position: relative;
 }
 
 /*=========================
 header
 =========================*/
 .header {
-    padding: ;
+    padding: 19px 5.6%;
+}
+
+.header__topic,
+.nav__topic {
+    color: #000;
+    font-family: Hind Guntur;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 16.08px;
+}
+
+/* .nav初期表示 */
+.nav {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100vh;
+    padding: 19px 5.6%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.4s;
+}
+
+.nav__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 38px;
+    margin-top: 98px;
+}
+
+.nav__item {
+    color: #000;
+    text-align: center;
+    font-family: Hind Guntur;
+    font-size: 1.8rem;
+    letter-spacing: 0.01em;
+}
+
+.nav__item--instagram {
+    margin-top: 24px;
+}
+
+.nav__item--reserve {
+    margin-top: 24px;
+}
+
+.nav.active {
+    transform: translateX(0);
+}
+
+.nav__btn {
+    display: block;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+
+    position: absolute;
+    top: 12px;
+    right: 3.5%;
+}
+
+.header__btn {
+    display: block;
+    width: 29px;
+    height: 16px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 19px;
+    right: 3.5%;
+}
+
+/* .header pc */
+@media screen and (min-width: 769px) {
+    /*  */
+}
+
+/*=========================
+main
+=========================*/
+
+.header {
+    margin: 18px 0;
+}
+
+.header__img {
+    position: absolute; /* 絶対配置 */
+    top: 24px; /* 上からの距離を調整 */
+    left: 30px; /* 左からの距離を調整 */
+    z-index: 10; /* 画像より前面に表示 */
+}
+
+.mainImg {
+    position: relative;
+}
+
+/* article header */
+.main .mainImg__pc{
+    display: none;
+}
+
+.article__header {
+    padding: 0 2.6% 128px;
+}
+
+/* .message */
+.section--message {
+    padding: 64px 5.3%;
+    background-color: #313131;
+}
+
+.section__topic--message {
+    color: #FFF;
+}
+
+.message__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.message__txt {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2.4;
+    
+    margin-top: 28px;
+}
+
+/* .hairStyles */
+.section--hairStyles {
+    padding: 36px 29px;
+}
+
+.hairStyles {
+    display: flex;
+    justify-content: center;
+    gap: 1.9rem 2.4rem;
+    flex-wrap: wrap;
+}
+
+.hairStyles__item {
+    width: 146px;
+}
+
+
+.hairStyles__content {
+    margin-top: 7px;
+}
+
+.hairStyles__name {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.hairStyles__identity {
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.hairStyles__category {
+    color: var(--8f, #8F8F8F);
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    margin-top: 5px;
+}
+
+.btn_container--hairStyles {
+    margin-top: 34px;
+}
+
+/* .menu */
+.section--menu {
+    padding: 64px 12.4%;
+    background-color: #313131;
+}
+
+.section__topic--menu {
+    color: #FFF;
+}
+
+.menu {
+    text-align: center;
+}
+
+/* .menu__img {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+
+.menu__txt {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2.4;
+    
+    margin-top: 28px;
+}
+
+.btn--menu {
+    color: #FFF;
+}
+
+.btn_container--menu {
+    margin-top: 34px;
+} 
+
+/* .about */
+.section--about {
+    padding: 64px 7.75%;
+}
+
+.about__middle_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* flexアイテムの下端を揃える */
+    margin-top: 16px;
+    /* 高さを固定 */
+    height: 100%; 
+}
+
+.stylist__name {
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+
+.stylist__engNameJob {
+    font-family: Hind Guntur;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+}
+
+.stylist__job {
+    font-size: 0.8rem;
+    letter-spacing: 0.032em
+}
+
+.about__img--scissors_comb {
+    width: 40%;
+    height: auto;
+    /* 画像がインライン要素扱いの場合に下部にできる余白を防ぐため */
+    display: block;
+}
+
+.about__txt {
+    margin-top: 72px;
+}
+
+.about__txt__top {
+    display: block;
+    /* boldにして下線を入れる */
+    font-weight: 600;
+    text-decoration: underline;
+    /* 字間を開ける */
+    letter-spacing: 0.1em;
+    /* 文字の高さの間隔を開ける */
+    line-height: 1.8;
+}
+
+.about__txt__bottom {
+    display: block;
+    margin-top: 24px;
+}
+
+.btn_container--about {
+    margin-top: 32px;
+}
+
+/* .article__footer */
+.article__footer {
+    margin-top: 64px;
+    text-align: center;
+}
+
+
+
+/*=========================
+footer
+=========================*/
+.footer {
+    background-color: #313131;
+    padding: 28px 0 20px;
+    text-align: center;
+    margin-top: 78px;
+}
+
+.footer__logo {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+}
+
+.footer__main {
+    display: none;
+}
+
+.footer__small {
+    display: block;
+    margin-top: 24px;
+    color: #FFF;
+    font-family: Hind Guntur;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+
 }
