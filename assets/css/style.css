@@ -141,18 +141,12 @@ header
 
 .nav__header__img {
     position: fixed;
-    top: 43px; /* 上からの距離を調整 */
-    left: 30px; /* 左からの距離を調整 */
+    top: 43px;
+    left: 30px;
 }
 
 .nav__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-    gap: 38px;
+    display: block;
     margin-top: 98px;
 }
 
@@ -162,6 +156,7 @@ header
     font-family: Hind Guntur;
     font-size: 1.8rem;
     letter-spacing: 0.01em;
+    margin-bottom: 38px;
 }
 
 .nav__item--instagram {
@@ -170,6 +165,10 @@ header
 
 .nav__item--reserve {
     margin-top: 24px;
+}
+
+.nav__item--reserve_pc {
+    display: none;
 }
 
 .nav.active {
@@ -200,7 +199,41 @@ header
 
 /* .header pc */
 @media screen and (min-width: 769px) {
-    /*  */
+    
+    .nav {
+        background: transparent;
+        transform: translateX(0);
+    }
+
+    .nav__header {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        /* 縦長さを横幅としてコンテナを作ってspace betweenして90度回転させればいいのかも */
+        transform: rotate(90deg);
+        /* align-items: flex-end; */
+    }
+
+    .nav__item {
+        font-size: 1.2rem;
+        /* margin: 30px 0; */
+        /* flex-direction: column; */
+        /* align-items: flex-end; */
+    }
+    
+    .nav__item--reserve {
+        display: none;
+    }
+    
+    .nav__item--reserve_pc {
+        display: block;
+    }
+    
+    .header__btn {
+        display: none;
+    }
 }
 
 /*=========================
@@ -231,6 +264,21 @@ main
     padding: 0 2.6% 128px;
 }
 
+/* article header pc */
+@media screen and (min-width: 769px) {
+    .mainImg .mainImg__pc {
+        display: block;
+    }
+
+    .mainImg .mainImg__sp {
+        display: none;
+    }
+
+    .article__header {
+        padding: 0 6.0% 272px;
+    }
+}
+
 /* .message */
 .section--message {
     padding: 64px 5.3%;
@@ -257,6 +305,29 @@ main
     margin-top: 28px;
 }
 
+/* .message pc */
+@media screen and (min-width: 769px) {
+    .message {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4rem;
+    }
+
+    .message__img {
+        width: 60%;
+        height: auto;
+        /* 画像がインライン要素扱いの場合に下部にできる余白を防ぐため */
+        display: block;
+    }
+
+    .message__txt {
+        /* テキストを左寄せ */
+        text-align: left;
+        font-size: 1.6rem;
+    }
+}
+
 /* .hairStyles */
 .section--hairStyles {
     padding: 36px 29px;
@@ -267,12 +338,18 @@ main
     justify-content: center;
     gap: 1.9rem 2.4rem;
     flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 70%;
 }
 
 .hairStyles__item {
-    width: 146px;
+    width: 45%;
 }
 
+.hairStyles__img img {
+    width: 100%;
+    height: auto;
+}
 
 .hairStyles__content {
     margin-top: 7px;
@@ -304,6 +381,27 @@ main
     margin-top: 34px;
 }
 
+/* .hairStyles pc */
+@media screen and (min-width: 769px) {
+    .hairStyles {
+        display: flex;
+        justify-content: center;
+        gap: 1.9rem 2.4rem;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .hairStyles__item {
+        width: 31%;
+    }
+
+    .hairStyles__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* .menu */
 .section--menu {
     padding: 64px 12.4%;
@@ -315,14 +413,15 @@ main
 }
 
 .menu {
-    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
-/* .menu__img {
+.menu__img{
     display: block;
     width: 100%;
     height: auto;
-} */
+}
 
 .menu__txt {
     color: #FFF;
@@ -341,6 +440,24 @@ main
 .btn_container--menu {
     margin-top: 34px;
 } 
+
+/* .menu pc */
+@media screen and (min-width: 769px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4rem;
+    }
+
+    .menu__img img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+
+}
 
 /* .about */
 .section--about {
