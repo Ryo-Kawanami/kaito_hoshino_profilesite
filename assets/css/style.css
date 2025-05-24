@@ -173,7 +173,8 @@ header
 
 .nav__list {
     display: block;
-    margin-top: 98px;
+    /* margin-top: 98px; */
+    margin-top: 168px;
 }
 
 .nav__item {
