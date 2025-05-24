@@ -174,7 +174,7 @@ header
 .nav__list {
     display: block;
     /* margin-top: 98px; */
-    margin-top: 168px;
+    margin-top: 148px;
 }
 
 .nav__item {
@@ -203,7 +203,7 @@ header
     transform: translateX(0);
 }
 
-.nav__btn {
+.nav__btn--close {
     display: block;
     width: 30px;
     height: auto;
@@ -214,7 +214,7 @@ header
     right: 3.5%;
 }
 
-.header__btn {
+.nav__btn--menu {
     display: block;
     width: 29px;
     height: 16px;
@@ -238,7 +238,11 @@ header
         background-color: transparent;
     }
 
-    .nav__header {
+    .nav__header__img {
+        display: none;
+    }
+
+    .nav__btn--menu {
         display: none;
     }
 
@@ -248,7 +252,6 @@ header
         /* justify-content: space-between; */
         gap: 5rem;
         margin-top: 0;
-        
     }
 
     .nav__item {
@@ -578,14 +581,9 @@ main
         margin-top: 48px;
     }
 
-    
-
     .menu__txt .spBr {
         display: none;
     }
-
-    
-
 }
 
 /* .about */
