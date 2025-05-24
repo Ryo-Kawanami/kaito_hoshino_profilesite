@@ -103,6 +103,7 @@ img {
 /* .common pc */
 @media screen and (min-width: 769px) {
     .section__topic {
+        font-family: "Hind Guntur";
         font-size: 3.2rem;
         letter-spacing: 1.6px;
     }
