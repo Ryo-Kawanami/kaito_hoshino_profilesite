@@ -209,9 +209,10 @@ header
     height: auto;
     cursor: pointer;
 
-    position: absolute;
+    position: fixed;
     top: 30px;
-    right: 3.5%;
+    right: 13.125px;
+    z-index: 1000;
 }
 
 .nav__btn--menu {
@@ -220,9 +221,10 @@ header
     height: 16px;
     cursor: pointer;
 
-    position: absolute;
-    top: 19px;
-    right: 3.5%;
+    position: fixed;
+    top: 36.5px;
+    right: 13.125px;
+    z-index: 5;
 }
 
 /* .header pc */
