@@ -663,6 +663,16 @@ main
         margin: 122px 0 192px;
     }
 
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .about__middle_container {
+        display: block;
+        /* ハサミ画像をposition: absoluteでおけばflexかけなくてよくてスッキルするかも */
+    }
+
     .stylist__engNameJob .spBr {
         display: none;
     }
