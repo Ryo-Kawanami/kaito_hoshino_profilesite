@@ -691,7 +691,7 @@ main
     display: block;
     /* boldにして下線を入れる */
     font-weight: 600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     /* 字間を開ける */
     letter-spacing: 0.1em;
     /* 文字の高さの間隔を開ける */
